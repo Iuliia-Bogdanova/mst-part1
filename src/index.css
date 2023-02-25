@@ -59,7 +59,7 @@ code {
   background-color: #fff;
   width: 70%;
   max-width: 500px;
-  max-height: 300px;
+  max-height: 350px;
   padding: 40px 30px;
   border-radius: 10px;
   position: absolute;
@@ -101,12 +101,12 @@ code {
     transition-delay: 0.2s;
 }
 
-.overlay.animated .modal.show {
+.overlay.animated.show {
   opacity: 1;
   visibility: visible;
 }
 
-.overlay.animated .modal.show .modal {
+.overlay.animated.show .modal {
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, -50%);
