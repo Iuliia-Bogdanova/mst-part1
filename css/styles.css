@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Prata";
+  src: url("/assets/fonts/prata-regular.woff2") format(woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --font-family: "Arial", sans-serif;
+  --second-family: "Prata", sans-serif;
+
+  --text-color: #fff;
+  --bg-color-first: #222222;
+  --bg-color-second: #282829;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+h1 {
+  font-family: var(--second-family);
+  background-color: var(--bg-color-first);
+}
