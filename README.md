@@ -18,4 +18,39 @@ https://www.figma.com/design/Bxaf0gbgU9jlZPJ9IJWP9r/test_mst?node-id=65-571&t=40
 12. Тестовое задание нужно прислать ссылкой на деплой + ссылкой на гитхаб.
 
 
+Transform Your Body & Mind
+💡 Achieve your fitness goals effortlessly
+
+🔹 Подзаголовок с цифрами (замена $10,000 и % скидок):
+✅ Unlimited Gym Access – $49/month
+✅ Personal Training – 30% Off First Session
+✅ Group Classes – Yoga, HIIT, Pilates & More
+
+🔹 Текст кнопки (замена ORDER):
+👉 Get Started Today
+
+🔹 Блок с иконками (замена lorem ipsum):
+💪 State-of-the-Art Equipment – Train with the best machines
+👥 Certified Trainers – Personalized coaching available
+🌿 Wellness & Recovery – Sauna, massage, and nutrition advice
+
+🔹 Форма заявки:
+📩 Sign up for a free trial
+✉️ Name: []
+📧 Email: []
+✅ I agree to the privacy policy
+
+Логотип (LOREM) → FITZONE (или GYM PRIME, ATHLETICA, COREFIT)
+🔹 Ссылки в хэдере:
+
+CONSECTETUR → Home
+SIT AMET → Classes
+EIUSMOD TEMPOR → Membership
+Если в макете предусмотрены другие разделы, можно добавить:
+
+Trainers (о тренерах)
+Facilities (о зале и оборудовании)
+Contact (контакты)
+
+
 
