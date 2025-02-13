@@ -30,6 +30,7 @@ Transform Your Body & Mind
 👉 Get Started Today
 
 🔹 Блок с иконками (замена lorem ipsum):
+Flexible Memberships – Choose a plan that fits your lifestyle
 💪 State-of-the-Art Equipment – Train with the best machines
 👥 Certified Trainers – Personalized coaching available
 🌿 Wellness & Recovery – Sauna, massage, and nutrition advice
