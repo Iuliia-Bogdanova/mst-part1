@@ -12,9 +12,10 @@
   --text-color: #fff;
   --bg-color-first: #222222;
   --bg-color-second: #282829;
-  --second-color: #D5C9BE;
-  --third-color: #38535D;
-  --fourth-color: #55565A;
+  --second-color: #d5c9be;
+  --third-color: #55565a;
+  --fourth-color: #405d65;
+  --fifth-color: #38535d;
 }
 
 html {
@@ -22,7 +23,7 @@ html {
   scroll-behavior: smooth;
 }
 
-*, 
+*,
 *::after,
 *::before {
   box-sizing: inherit;
@@ -48,7 +49,7 @@ button:hover {
   background: var(--second-color);
 }
 
-ul, 
+ul,
 li {
   list-style-type: none;
   padding: 0;
@@ -69,11 +70,11 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  border: 1px solid var(--fourth-color);
+  border: 1px solid var(--third-color);
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: var(--fourth-color);
+  background-color: var(--third-color);
 }
 
 .container {
@@ -164,6 +165,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-family: var(--second-family);
   font-size: 80px;
   line-height: 120%;
+  /* margin-top: 150px; */
 }
 
 .subtitle {
@@ -224,7 +226,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .banner__img {
-  /* width: 760px; */
   width: 40%;
   height: 1000px;
   background-image: url("/assets/img/about.webp");
@@ -239,7 +240,8 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: var(--bg-color-second);
 }
 
-.about {
+.about,
+.form {
   width: 100vw;
   background-color: var(--bg-color-second);
 }
@@ -252,7 +254,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .about__img {
-  width: 33.3%;   
+  width: 30%;
   height: 724px;
   background-position: center;
   background-repeat: no-repeat;
@@ -265,12 +267,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 .img-right {
   background-image: url("/assets/img/promo2.webp");
-} 
+}
 
 .about__text {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 40px;
 }
 
@@ -285,7 +289,11 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 24px;
   line-height: 140%;
   padding: 40px 0 40px 80px;
-  border-bottom: 1px solid var(--fourth-color);
+  border-bottom: 1px solid var(--third-color);
+}
+
+.small {
+  font-size: 20px;
 }
 
 .benefit-item:last-child {
@@ -297,7 +305,7 @@ body::-webkit-scrollbar-thumb:hover {
   content: "";
   width: 58px;
   height: 47px;
-  top: 33.3%;
+  top: 30%;
   left: 0;
   background-image: url("/assets/icons/exclude.svg");
   background-position: center;
@@ -306,6 +314,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .about-btn {
+  width: 100%;
   padding: 32px 0;
   font-weight: 700;
   font-size: 20px;
@@ -313,6 +322,121 @@ body::-webkit-scrollbar-thumb:hover {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--bg-color-second);
+}
+
+.form-item {
+  padding: 0 clamp(10px, 100vw * 170 / 1920, 170px);
+}
+
+.form-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  border-radius: 30px;
+  background-color: var(--text-color);
+}
+
+.form__submit {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+  gap: 45px;
+  margin: 70px 0 70px 130px;
+}
+
+.form-header {
+  font-family: var(--second-family);
+  font-size: 54px;
+  line-height: 110%;
+  color: var(--fifth-color);
+}
+
+.form-group {
+  width: 100%;
+  padding: 14px 0 14px 40px;
+  margin-bottom: 20px;
+  border: 2px solid #d6d6d6;
+  border-radius: 4px;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--third-color);
+  opacity: 0.7;
+}
+
+.form-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+.form-group--checkbox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+  margin-bottom: 30px;
+  border: none;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--third-color);
+}
+
+.form-group--checkbox input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 2px solid var(--fourth-color);
+  accent-color: black;
+  cursor: pointer;
+}
+
+.form-group--checkbox label {
+  cursor: pointer;
+}
+
+.form-btn {
+  width: 100%;
+  border-radius: 4px;
+  padding: 32px 0;
+  background: var(--bg-color-second);
+  font-family: var(--font-family);
+  font-size: 24px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.form-btn:hover {
+  background-color: var(--fourth-color);
+}
+
+.form__img {
+  position: relative;
+  width: 38%;
+  height: auto;
+  border-radius: 0 30px 30px 0;
+  background-image: url("/assets/img/form.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form__img::after {
+  position: absolute;
+  content: "";
+  width: 390px;
+  height: 370px;
+  top: 0;
+  left: 0;
+  background-image: url("/assets/img/person-photoaidcom--photoaid-remove-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (width < 1380px) {

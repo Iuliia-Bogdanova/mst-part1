@@ -1,72 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ATHLETICA fitness</title>
-  <link rel="stylesheet" href="/css/modern-normalize.css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.ico" />
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__nav">
-        <a href="#" class="logo">ATHLETICA</a>
-        <nav class="nav__menu">
-          <ul class="menu__list">
-            <li class="menu__link">
-              <a href="#about">Facilities</a>
-            </li>
-            <li class="menu__link">
-              <a href="#">Membership</a>
-            </li>
-            <li class="menu__link">
-              <a href="#footer">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="banner">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATHLETICA fitness</title>
+    <link rel="stylesheet" href="/css/modern-normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
       <div class="container">
-        <div class="banner-item">
-          <div class="banner__text">
-            <h1 class="title">Transform<br>Your Body & Mind</h1>
-            <h2 class="subtitle">Achieve your fitness goals</h2>
-            <ul class="promo">
-              <li class="promo-item">from<span class="num">$49</span>unlimited Gym Access</li>
-              <li class="promo-item"><span class="num">30%</span>discount on the first lesson with a personal trainer</li>
-              <li class="promo-item">up to<span class="num">50%</span>discount on group classes</li>
+        <div class="header__nav">
+          <a href="#" class="logo">ATHLETICA</a>
+          <nav class="nav__menu">
+            <ul class="menu__list">
+              <li class="menu__link">
+                <a href="#about">Facilities</a>
+              </li>
+              <li class="menu__link">
+                <a href="#form">Membership</a>
+              </li>
+              <li class="menu__link">
+                <a href="#footer">Contacts</a>
+              </li>
             </ul>
-            <button class="promo-btn">Join Now</button>
-          </div>
-          <div class="banner__img"></div>
+          </nav>
         </div>
       </div>
-    </section>
-    <section class="frame"></section>
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about-item">
-          <div class="about__img img-left"></div>
-          <div class="about__text">
-            <ul class="benefits">
-              <li class="benefit-item">Flexible Memberships – Choose a plan that fits your lifestyle</li>
-              <li class="benefit-item">State-of-the-Art Equipment – Train with the best machines</li>
-              <li class="benefit-item">Certified Trainers – Personalized coaching available</li>
-              <li class="benefit-item">Wellness & Recovery – Sauna, massage, and nutrition advice</li>
-            </ul>
-            <button class="about-btn">Join Now</button>
+    </header>
+    <main class="main">
+      <section class="banner">
+        <div class="container">
+          <div class="banner-item">
+            <div class="banner__text">
+              <h1 class="title">Transform<br />Your Body & Mind</h1>
+              <h2 class="subtitle">Achieve your fitness goals</h2>
+              <ul class="promo">
+                <li class="promo-item">
+                  from<span class="num">$49</span>unlimited Gym Access
+                </li>
+                <li class="promo-item">
+                  <span class="num">30%</span>discount on the first lesson with
+                  a personal trainer
+                </li>
+                <li class="promo-item">
+                  up to<span class="num">50%</span>discount on group classes
+                </li>
+              </ul>
+              <button class="promo-btn">Join Now</button>
+            </div>
+            <div class="banner__img"></div>
           </div>
-          <div class="about__img img-right"></div>
         </div>
-      </div>
-    </section>
-    <section class="frame"></section>
-  </main>
-  <script src="/js/script.js"></script>
-</body>
+      </section>
+      <section class="frame"></section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-item">
+            <div class="about__img img-left"></div>
+            <div class="about__text">
+              <ul class="benefits">
+                <li class="benefit-item">
+                  Flexible Memberships<br /><span class="small"
+                    >Choose a plan that fits your lifestyle</span
+                  >
+                </li>
+                <li class="benefit-item">
+                  State-of-the-Art Equipment<br /><span class="small"
+                    >Train with the best machines</span
+                  >
+                </li>
+                <li class="benefit-item">
+                  Certified Trainers<br /><span class="small"
+                    >Personalized coaching available</span
+                  >
+                </li>
+                <li class="benefit-item">
+                  Wellness & Recovery<br /><span class="small"
+                    >Sauna, massage, and nutrition advice</span
+                  >
+                </li>
+              </ul>
+              <button class="about-btn">Join Now</button>
+            </div>
+            <div class="about__img img-right"></div>
+          </div>
+        </div>
+      </section>
+      <section class="frame"></section>
+      <section class="form" id="form">
+        <div class="container">
+          <div class="form-item">
+            <div class="form-content">
+              <div class="form__submit">
+                <h3 class="form-header">Sign up<br />for a free trial</h3>
+                <form action="#" method="post">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="E-mail"
+                      required
+                    />
+                  </div>
+                  <div class="form-group form-group--checkbox">
+                    <input
+                      type="checkbox"
+                      id="privacy"
+                      name="privacy"
+                      required
+                    />
+                    <label for="privacy">I accept Privacy policy</label>
+                  </div>
+                  <button class="form-btn" type="submit">Submit Form</button>
+                </form>
+              </div>
+              <div class="form__img"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="frame"></section>
+      <footer class="footer" id="footer"></footer>
+    </main>
+    <script src="/js/script.js"></script>
+  </body>
 </html>
