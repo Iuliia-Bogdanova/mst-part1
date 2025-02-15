@@ -41,7 +41,12 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  padding: 30px 0;
   background: var(--text-color);
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
   transition: all 0.3s ease;
 }
 
@@ -118,7 +123,9 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 0.3s ease;
 }
 
-.logo:hover {
+.logo:hover,
+.menu__link:hover,
+.footer__link:hover {
   color: var(--second-color);
 }
 
@@ -135,10 +142,6 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 150%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-}
-
-.menu__link:hover {
-  color: var(--second-color);
 }
 
 .banner {
@@ -215,13 +218,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .promo-btn {
   width: 190px;
-  height: 96px;
   margin-bottom: 40px;
   font-weight: 700;
   font-size: 24px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: var(--bg-color-first);
 }
 
@@ -309,12 +308,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .about-btn {
   width: 100%;
-  padding: 32px 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: var(--bg-color-second);
 }
 
@@ -396,11 +391,8 @@ body::-webkit-scrollbar-thumb:hover {
 .form-btn {
   width: 100%;
   border-radius: 4px;
-  padding: 32px 0;
   background: var(--bg-color-second);
   font-size: 24px;
-  line-height: 150%;
-  text-transform: uppercase;
   color: var(--text-color);
 }
 
@@ -423,13 +415,87 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   content: "";
   width: 590px;
-  height: 728px;
+  height: 722px;
   top: -15%;
   left: -10%;
   background-image: url("/assets/img/trainers.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer {
+  width: 100vw;
+  background-color: var(--bg-color-first);
+}
+
+.footer-top {
+  border-top: 2px solid var(--second-color);
+  border-bottom: 2px solid var(--second-color);
+  padding: 36px 0;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.footer__link {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px clamp(10px, 100vw * 170 / 1920, 170px) 60px
+    clamp(10px, 100vw * 170 / 1920, 170px);
+}
+
+.footer__contacts,
+.footer__legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  gap: 30px;
+}
+
+a:hover svg path {
+  stroke: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.footer-btn {
+  width: 180px;
+  font-family: var(--font-family);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--bg-color-first);
+}
+
+.copyright {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.legal {
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--second-color);
+}
+
+.legal:hover {
+  color: var(--text-color);
 }
 
 @media (width < 1380px) {
