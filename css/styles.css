@@ -66,7 +66,7 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  padding: 30px 0;
+  padding: 1.875rem 0;
   background: var(--text-color);
   font-size: 1.25rem;
   letter-spacing: 0.04em;
@@ -161,7 +161,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  gap: 30px;
+  gap: 1.875rem;
   padding-left: clamp(10px, 100vw * 170 / 1920, 170px);
 }
 
@@ -175,21 +175,21 @@ li {
   font-size: 3.125rem;
   line-height: 1.2;
   text-transform: lowercase;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .promo {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .promo-item {
   display: flex;
   position: relative;
   align-items: center;
-  gap: 10px;
-  padding-left: 54px;
+  gap: .625rem;
+  padding-left: 3.375rem;
   font-size: 1.5rem;
   line-height: 1.1;
   text-transform: lowercase;
@@ -198,9 +198,9 @@ li {
 .promo-item::before {
   position: absolute;
   content: "";
-  width: 39px;
-  height: 37px;
-  top: 8px;
+  width: 2.4375rem;
+  height: 2.3125rem;
+  top: .5rem;
   left: 0;
   background-image: url("/assets/icons/tick.svg");
   background-position: center;
@@ -213,12 +213,12 @@ li {
   font-size: 2.5rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding-top: 4px;
+  padding-top: .25rem;
 }
 
 .promo-btn {
-  width: 190px;
-  margin-bottom: 40px;
+  width: 11.875rem;
+  margin-bottom: 2.5rem;
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--bg-color-first);
@@ -235,7 +235,7 @@ li {
 
 .frame {
   width: 100vw;
-  min-height: 100px;
+  min-height: 6.25rem;
   background-color: var(--bg-color-second);
 }
 
@@ -249,7 +249,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 50px;
+  gap: 3.125rem;
 }
 
 .about__img {
@@ -274,14 +274,14 @@ li {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .benefit-item {
   position: relative;
   font-size: 1.5rem;
   line-height: 1.4;
-  padding: 40px 0 40px 80px;
+  padding: 2.5rem 0 2.5rem 5rem;
   border-bottom: 1px solid var(--third-color);
 }
 
@@ -296,8 +296,8 @@ li {
 .benefit-item::before {
   position: absolute;
   content: "";
-  width: 58px;
-  height: 47px;
+  width: 3.625rem;
+  height: 2.9375rem;
   top: 30%;
   left: 0;
   background-image: url("/assets/icons/exclude.svg");
@@ -319,7 +319,7 @@ li {
 .form-content {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 3.125rem;
   border-radius: 30px;
   background-color: var(--text-color);
 }
@@ -329,7 +329,7 @@ li {
   justify-content: space-between;
   flex-direction: column;
   flex: 1;
-  gap: 45px;
+  gap: 2.8125rem;
   margin: 70px 0 70px 130px;
 }
 
@@ -342,8 +342,8 @@ li {
 
 .form-group {
   width: 100%;
-  padding: 14px 0 14px 40px;
-  margin-bottom: 20px;
+  padding: .875rem .875rem .875rem 2.5rem;
+  margin-bottom: 1.25rem;
   border: 2px solid #d6d6d6;
   border-radius: 4px;
   font-size: 1.5rem;
@@ -364,9 +364,9 @@ li {
 .form-group--checkbox {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   border: none;
   font-size: 1.125rem;
   line-height: 1.3;
@@ -374,8 +374,8 @@ li {
 }
 
 .form-group--checkbox input[type="checkbox"] {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 4px;
   border: 2px solid var(--fourth-color);
   accent-color: var(--bg-color-second);
@@ -415,7 +415,7 @@ li {
   width: 590px;
   height: 712px;
   top: -15%;
-  left: -10%;
+  left: -15%;
   background-image: url("/assets/img/trainers.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -430,13 +430,13 @@ li {
 .footer-top {
   border-top: 2px solid var(--second-color);
   border-bottom: 2px solid var(--second-color);
-  padding: 36px 0;
+  padding: 2.25rem 0;
 }
 
 .footer__list {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 3.75rem;
 }
 
 .footer__link {
@@ -449,12 +449,18 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
-  padding: 40px clamp(10px, 100vw * 170 / 1920, 170px) 60px
+  gap: 1.25rem;
+  padding: 2.5rem clamp(10px, 100vw * 170 / 1920, 170px) 3.75rem
     clamp(10px, 100vw * 170 / 1920, 170px);
 }
 
-.footer__contacts,
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+}
+
 .footer__legal {
   display: flex;
   justify-content: space-between;
@@ -463,7 +469,7 @@ li {
 
 .socials {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 a:hover svg path {
@@ -472,7 +478,7 @@ a:hover svg path {
 }
 
 .footer-btn {
-  width: 180px;
+  width: 11.25rem;
   font-family: var(--font-family);
   font-style: italic;
   color: var(--bg-color-first);
@@ -486,7 +492,11 @@ a:hover svg path {
   color: var(--text-color);
 }
 
-@media (width < 1380px) {
+@media (max-width: 1380px) {
+  html {
+    font-size: 14px; 
+  }
+  
   .header__nav {
     padding: 30px clamp(10px, 100vw * 170 / 1920, 170px);
     gap: 20%;
@@ -496,29 +506,155 @@ a:hover svg path {
     flex-direction: column;
     gap: 4px;
   }
-}
 
-/* .responsive-img {
-  width: 760px;
-  height: 1000px;
-}
-
-@media (max-width: 320px) {
-  .responsive-img {
-    width: 100%;  
-    height: auto; 
+  .form__submit {
+    margin: 40px 0 40px 60px;
   }
-} */
 
-/* @media (max-width: 1280px) {
-    html {
-        font-size: 14px; 
-    }
+  .form__img::after {
+    width: 490px;
+    height: 552px;
+    top: -10%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 12px; 
+  }
+
+  .banner__img {
+    height: 800px;
+  }
+
+  .about__img {
+    height: 574px;
+  }
+
+  .form__submit {
+    margin: 30px 0 30px 50px;
+  }
+
+  .form__img::after {
+    width: 360px;
+    height: 442px;
+    top: -5%;
+  }
+}
+
+@media (max-width: 824px) {
+  .footer__contacts {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 1rem;
+  }
+
+  .footer-btn {
+    order: 2;
+  }
+
+  .socials {
+    order: 3;    
+  }
 }
 
 @media (max-width: 768px) {
-    html {
-        font-size: 12px; 
-    }
-} */
+  html {
+    font-size: 10px; 
+  }
 
+  .banner__img {
+    width: 30%;
+    height: 600px;
+  }
+
+  .about__img {
+    width: 40%;
+    height: 474px;
+  }
+
+  .img-right,
+  .form__img::after {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  html {
+    font-size: 10px; 
+  }
+
+  .header__nav {
+    justify-content: space-between;
+  }
+
+  .banner {
+    width: 100vw;
+    background-color: var(--bg-color-first);
+    padding-top: 13rem;
+  }
+
+  .banner__text {
+    padding: 0 clamp(10px, 100vw * 170 / 1920, 170px);
+  }
+
+  .promo-btn {
+    margin: 0 auto 2.5rem;
+  }
+
+  .banner__img {
+    display: none;
+  }
+
+  .form__submit {
+    margin: 20px 0 20px 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .frame {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .frame-first {
+    height: 18.75rem;
+    background-image: url("/assets/img/form.webp");
+  }
+
+  .frame-second {
+    height: 18.75rem;
+    margin: 5rem 0;
+    background-image: url("/assets/img/people.webp");
+  }
+
+  .about__text {
+    padding: 0 clamp(10px, 100vw * 170 / 1920, 170px);
+  }
+
+  .img-left {
+    display: none;
+  }
+
+  .form__submit {
+    margin: 20px;
+  }
+
+  .form__img {
+    display: none;
+  }
+
+  .footer__contacts {
+    justify-content: center;
+  }
+
+  .footer__legal {
+    flex-direction: column;
+    row-gap: .625rem;
+  }
+
+  .copyright {
+    order: 3;
+  }
+}
